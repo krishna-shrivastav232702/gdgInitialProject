@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const MyCard = ({ registerId, title, description, date, time, location, imageUrl }) => {
   return (
 
-    <Card className="w-auto h-60 max-w-xs shadow-md rounded-2xl hover:shadow-xl overflow-hidden hover:scale-105 transition-transform duration-300" imgSrc={imageUrl} horizontal>
+    <Card className="w-auto mt-10  h-60 max-w-xs shadow-md rounded-2xl hover:shadow-xl overflow-hidden hover:scale-105 transition-transform duration-300" imgSrc={imageUrl} horizontal>
       <div className="flex">
 
         <div className="p-4 w-full">
@@ -24,7 +24,7 @@ const MyCard = ({ registerId, title, description, date, time, location, imageUrl
           <p className="text-sm text-gray-500 dark:text-gray-300 ">
             <strong>Location:</strong> {location}
           </p>
-          <button className="mt-4  text-black font-semibold py-2 px-4 shadow-md rounded hover:shadow-xl hover:scale-105">
+          <button className="mt-4   text-black font-semibold py-2 px-4 shadow-md rounded hover:shadow-xl hover:scale-105 hover:bg-darkBlue hover:text-white rounded-2xl">
             Read More
           </button>
           <Link to={`/registration/${registerId}`} className="mx-4 font-bold bg-red-500 text-white p-3 rounded-2xl hover:bg-darkBlue hover:text-white transition duration-300 ease-in-out shadow-md hover:shadow-xl transform hover:scale-105">

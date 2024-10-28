@@ -6,7 +6,7 @@ import myImage from "../../assets/krishna.jpeg"
 const About = () => {
   return (
     <div className="py-40 bg-darkBlue  flex justify-center items-center">
-      <div className="px-24 flex-shrink-0 ">
+      <div className="px-28 flex-shrink-0 ">
         <img src={myImage} className="w-60 h-auto object-cover rounded-2xl hover:scale-110 transition-transform duration-300 " />
       </div>
 
