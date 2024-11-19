@@ -50,7 +50,7 @@ const Signup = () => {
 
   return (
     <div className="h-screen flex items-center justify-center bg-darkBlue">
-      <div className="bg-white bg-opacity-20 backdrop-blur-lg shadow-lg rounded-lg w-full max-w-md p-8 border border-gray-200 border-opacity-20">
+      <div className=" bg-opacity-20 backdrop-blur-lg shadow-lg rounded-lg w-full max-w-md p-8 border border-gray-200 border-opacity-20  hover:transition hover:delay-100 hover:duration-300">
         <h1 className="text-2xl font-bold text-center text-white mb-6">Sign Up</h1>
 
         <form onSubmit={handleSignup} className="flex flex-col space-y-4">
