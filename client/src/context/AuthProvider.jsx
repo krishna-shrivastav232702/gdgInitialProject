@@ -13,10 +13,10 @@ const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [role,setRole] = useState('');
 
-  const createUser = async (email, password) => {
+  const createUser = async (email, password,role) => {
     setLoading(true);
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-    await fetchUserRole(userCredential.user.uid);
+    setRole(role);
     return userCredential;
   }
 

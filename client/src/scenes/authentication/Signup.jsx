@@ -23,7 +23,7 @@ const Signup = () => {
     const state = form.state.value;
 
     try {
-      const userCredential = await createUser(email, password);
+      const userCredential = await createUser(email, password,role);
       const firebaseUser = userCredential.user;
 
       const userData = {
